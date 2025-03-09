@@ -1,51 +1,44 @@
-#about {
+#about{
     position: relative;
 }
-
-.about-container {
+.about-container{
     display: flex;
     gap: 2rem;
-    margin-top: 1rem; /* Réduire la marge en haut */
-    margin-bottom: 1rem; /* Réduire la marge en bas */
+    margin-bottom:2rem ;
+    margin-top: 2rem;
+    
 }
-
-#about-details-container {
+#about-details-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 0; /* Ajuster la marge */
 }
-
-section {
-    padding-top: 2vh; /* Réduire le padding en haut */
-    height: auto; /* Changer la hauteur à auto pour que la hauteur s'adapte au contenu */
+section{
+    padding-top: 4vh;
+    height:96vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
-
-.section-container {
+.section-container{
     display: flex;
 }
-
-.details-container {
+.details-container{
     padding: 1rem;
-    flex: 1;
+    flex:1;
     background: white;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
+    border:rgb(53,53,53)0.1rem solid;
+    border-color: rgb(163,163,163);
     text-align: center;
     width: 300px;
 }
-
-.details-container:hover {
+.details-container:hover{
     cursor: pointer;
     width: 350px;
     background-color: gray;
 }
-
 .about-container-motion {
     display: flex;
     flex-direction: column;
@@ -55,9 +48,4 @@ section {
     margin: 0 auto;
     padding: 3.5rem;
     overflow: hidden;
-}
-
-.section_pic-container {
-    width: 0; /* Réduire la taille si l'image n'est pas nécessaire */
-    height: 0;
-}
+  }
