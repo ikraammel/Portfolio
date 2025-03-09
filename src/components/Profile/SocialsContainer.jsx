@@ -1,16 +1,17 @@
-import React from 'react'
+import React from 'react';
 
-const SocialsContainer = ({src,alt,location}) => {
+const SocialsContainer = ({ src, alt, location }) => {
   return (
-    <div id="socials-container">
-        <img
-            src={src}
-            alt={alt}
-            className="icon"
-            onClick={() => (window.location.href={location})}
-          />
-        </div>
-  )
-}
+    <div className="social-icon">
+      <img
+        src={src}
+        alt={alt}
+        className="icon"
+        onClick={() => window.open(location, '_blank')}
+        style={{ cursor: 'pointer' }} 
+      />
+    </div>
+  );
+};
 
-export default SocialsContainer
+export default SocialsContainer;
