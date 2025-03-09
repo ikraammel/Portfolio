@@ -31,6 +31,7 @@ const MyProjects = ({ img, title, link, site }) => {
           Github
         </motion.button>
 
+        {/* Bouton vers le site de parfums */}
         {site && (
           <motion.button
             className="btn btn-color-2 project-btn"  
