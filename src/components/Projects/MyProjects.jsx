@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const MyProjects = ({ img, title, link }) => {
+const MyProjects = ({ img, title, link, site }) => {
   return (
     <motion.div
       className="projects-container color-container"
@@ -24,15 +24,26 @@ const MyProjects = ({ img, title, link }) => {
       <div className="btn-container">
         <motion.button
           className="btn btn-color-2 project-btn"
-          onClick={() => window.location.href = link}
+          onClick={() => window.open(link, '_blank')}
           whileHover={{ scale: 1.1, backgroundColor: "#ff4a57" }}
           transition={{ duration: 0.3 }}
         >
           Github
         </motion.button>
+
+        {site && (
+          <motion.button
+            className="btn btn-color-2 project-btn"  
+            onClick={() => window.open(site, '_blank')}
+            whileHover={{ scale: 1.1, backgroundColor: "#ff4a57" }} 
+            transition={{ duration: 0.3 }}
+          >
+            Visit My Site
+          </motion.button>
+        )}
       </div>
     </motion.div>
   );
-}
+};
 
 export default MyProjects;
