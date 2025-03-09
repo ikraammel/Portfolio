@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import "./style.css";
 import Motion from "../Motion";
 import SocialsContainer from './SocialsContainer';
+
 const Profile = () => {
   return (
     <section id="profile">
@@ -22,16 +23,18 @@ const Profile = () => {
           <button className="btn btn-color-2" onClick={() => window.open('CV_ELHOUL_IKRAM.pdf')}>Download CV</button>
           <button className="btn btn-color-1" onClick={() => (window.location.href='#contact')}>Contact Info</button>
         </div>
-        <SocialsContainer 
-          src="linkedin.png"
-          alt="My linkedin profile"
-          location="https://www.linkedin.com/in/ikram-el-houl-720b482b6/'"
-        />
-        <SocialsContainer
-          src="github.png"
-          alt="My github profile"
-          location="'https://github.com/ikraammel'"
-        />
+        <div id="socials-container">
+          <SocialsContainer 
+            src="linkedin.png"
+            alt="My linkedin profile"
+            location="https://www.linkedin.com/in/ikram-el-houl-720b482b6/"
+          />
+          <SocialsContainer
+            src="github.png"
+            alt="My github profile"
+            location="https://github.com/ikraammel"
+          />
+        </div>
       </div>
     </section>
   );
