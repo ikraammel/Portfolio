@@ -24,6 +24,7 @@ const Profile = () => {
           <button className="btn btn-color-1" onClick={() => (window.location.href='#contact')}>Contact Info</button>
         </div>
         <div id="socials-container">
+          <div className="social-icon">
           <SocialsContainer 
             src="linkedin.png"
             alt="My linkedin profile"
@@ -34,6 +35,7 @@ const Profile = () => {
             alt="My github profile"
             location="https://github.com/ikraammel"
           />
+          </div>
         </div>
       </div>
     </section>
