@@ -1,0 +1,117 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+      height: 83vh;
+      margin-bottom: 2rem;
+    }
+    .about-container {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .section-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 0.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    #desktop-nav {
+      display: none;
+    }
+    #hamburger-nav {
+      display: flex;
+    }
+    #experience,
+    .experience-details-container {
+      margin-top: 0.5rem;
+    }
+    #profile,
+    .section-container {
+      display: block;
+    }
+    .section-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 0.5rem;
+    }
+    .arrow {
+      display: none;
+    }
+    section,
+    .section-container {
+      height: fit-content;
+      margin: 0 2%;
+    }
+    .section__pic-container {
+      width: 250px;
+      height: 250px;
+      margin: 0 auto 0.5rem;
+    }
+    .about-container {
+      margin-top: 0;
+      gap: 0.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #contact,
+    footer {
+      height: 30vh; /* Réduire la hauteur */
+    }
+    #profile {
+      height: 80vh; /* Ajuster la hauteur */
+      margin-bottom: 0;
+    }
+    article {
+      font-size: 0.9rem; /* Réduire la taille de la police */
+    }
+    footer nav {
+      height: fit-content;
+      margin-bottom: 0.5rem; /* Réduire la marge */
+    }
+    .about-container,
+    .contact-info-upper-container,
+    .btn-container {
+      flex-wrap: wrap;
+      gap: 0.5rem; /* Réduire l'espace entre les éléments */
+    }
+    .contact-info-container {
+      margin: 0;
+    }
+    .contact-info-container p,
+    .nav-links li a {
+      font-size: 0.9rem; /* Réduire la taille de la police */
+    }
+    .experience-sub-title {
+      font-size: 1rem; /* Réduire la taille de la police */
+    }
+    .logo {
+      font-size: 1.25rem; /* Réduire la taille de la police */
+    }
+    .nav-links {
+      flex-direction: column;
+      gap: 0.25rem; /* Réduire l'espace entre les éléments */
+      text-align: center;
+    }
+    .section_pic-container {
+      width: auto;
+      height: 40vw; /* Réduire la hauteur */
+      justify-content: center;
+    }
+    .section__text__p2 {
+      font-size: 1rem; /* Réduire la taille de la police */
+    }
+    .title {
+      font-size: 1.75rem; /* Réduire la taille de la police */
+    }
+    .text-container {
+      text-align: justify;
+    }
+    .section-container {
+      height: auto;
+      min-height: fit-content;
+      padding: 0.5rem; /* Réduire le padding */
+    }
+  }

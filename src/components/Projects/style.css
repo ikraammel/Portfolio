@@ -1,0 +1,87 @@
+projects-details-container {
+    padding: 2rem;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+/* Conteneur de chaque projet */
+.projects-container {
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    padding: 1rem;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espace les éléments verticalement */
+}
+
+/* Image du projet */
+.project-img {
+    width: 100%; /* Prend toute la largeur du conteneur */
+    height: 200px; /* Hauteur fixe pour toutes les images */
+    object-fit: cover; /* Assure que l'image remplit l'espace sans se déformer */
+    border-radius: 5px;
+}
+
+/* Effet au survol de l'image */
+.project-img:hover {
+    width: 100%; /* Garde la largeur à 100% au survol */
+    height: 220px; /* Augmente légèrement la hauteur au survol */
+}
+
+/* Titre du projet */
+.experience-sub-title {
+    text-align: center;
+    margin: 1rem 0; /* Espace autour du titre */
+}
+
+/* Conteneur du bouton */
+.btn-container {
+    margin-top: auto; /* Pousse le bouton en bas du conteneur */
+}
+.details-container{
+    padding: 1rem;
+    flex:1;
+    background: white;
+    border-radius: 2rem;
+    border:rgb(53,53,53)0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+    width: 300px;
+}
+.details-container:hover{
+    cursor: pointer;
+    width: 350px;
+    background-color: gray;
+}
+.btn-color-1, .btn-color-2{
+    border:rgb(53, 53, 53) 0.1rem solid;
+}
+.btn-color-1{
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+.btn-color-1:hover{
+    background: black;
+    color:white;
+}
+.btn-color-2:hover{
+    background: rgb(53,53,53);
+    color:white;
+}
+.btn{
+    font-weight: 600;
+    transition: all 300 ease;
+    padding:1rem;
+    width:8rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
