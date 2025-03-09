@@ -23,8 +23,8 @@ const Profile = () => {
           <button className="btn btn-color-2" onClick={() => window.open('CV_ELHOUL_IKRAM.pdf')}>Download CV</button>
           <button className="btn btn-color-1" onClick={() => (window.location.href='#contact')}>Contact Info</button>
         </div>
+        {/* Conteneur pour les icônes LinkedIn et GitHub */}
         <div id="socials-container">
-          <div className="social-icon">
           <SocialsContainer 
             src="linkedin.png"
             alt="My linkedin profile"
@@ -35,7 +35,6 @@ const Profile = () => {
             alt="My github profile"
             location="https://github.com/ikraammel"
           />
-          </div>
         </div>
       </div>
     </section>

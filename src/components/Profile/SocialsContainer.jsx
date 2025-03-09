@@ -2,6 +2,7 @@ import React from 'react';
 
 const SocialsContainer = ({ src, alt, location }) => {
   return (
+    <div className="social-icon">
       <img
         src={src}
         alt={alt}
@@ -9,6 +10,7 @@ const SocialsContainer = ({ src, alt, location }) => {
         onClick={() => window.open(location, '_blank')}
         style={{ cursor: 'pointer' }}
       />
+    </div>
   );
 };
 
