@@ -1,85 +1,86 @@
 #profile {
     display: flex;
     justify-content: center;
-    gap: 20px; 
+    gap: 20px;
     height: 80vh;
     align-items: center;
-}
-
-.section_pic-container {
+  }
+  
+  .section_pic-container {
     display: flex;
     height: 400px;
     width: 400px;
     margin: 25px;
-}
-
-.section__text {
+  }
+  
+  .section__text {
     align-self: center;
     text-align: center;
-}
-
-.section__text__p1 {
+  }
+  
+  .section__text__p1 {
     text-align: center;
     font-size: 1.75rem;
     margin-bottom: 1rem;
-}
-
-.title {
+  }
+  
+  .title {
     font-size: 3rem;
     text-align: center;
-}
-
-#socials-container {
+  }
+  
+  #socials-container {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    gap: 2rem; /* Ajoute plus d'espace entre LinkedIn et GitHub */
-}
-
-.btn-color-1, .btn-color-2 {
+    gap: 2rem; /* Espacement entre les icônes */
+  }
+  
+  .btn-color-1, .btn-color-2 {
     border: rgb(53, 53, 53) 0.1rem solid;
-}
-
-.btn-color-1 {
+  }
+  
+  .btn-color-1 {
     background-color: rgb(53, 53, 53);
     color: white;
-}
-
-.btn-color-1:hover {
+  }
+  
+  .btn-color-1:hover {
     background: black;
     color: white;
-}
-
-.btn-color-2:hover {
+  }
+  
+  .btn-color-2:hover {
     background: rgb(53, 53, 53);
     color: white;
-}
-
-.btn-container {
+  }
+  
+  .btn-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
-}
-
-.btn {
+  }
+  
+  .btn {
     font-weight: 600;
     transition: all 300 ease;
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
     cursor: pointer;
-}
-.social-icon {
-    display: inline-block; 
+  }
+  
+  .social-icon {
+    display: inline-block; /* Assure que les icônes sont alignées horizontalement */
   }
   
   .icon {
-    width: 40px; 
+    width: 40px;
     height: 40px;
     cursor: pointer;
     transition: transform 0.3s ease;
   }
   
   .icon:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
   }

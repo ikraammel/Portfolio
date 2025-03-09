@@ -8,7 +8,7 @@ const SocialsContainer = ({ src, alt, location }) => {
         alt={alt}
         className="icon"
         onClick={() => window.open(location, '_blank')}
-        style={{ cursor: 'pointer' }} 
+        style={{ cursor: 'pointer' }}
       />
     </div>
   );
