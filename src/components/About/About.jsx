@@ -10,13 +10,6 @@ const About = () => {
       <Motion className="section__text__p1" text1="Get to know more" text2="About me" />
       <div className="section-container">
         <motion.div
-          className="section_pic-container"
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
-        ></motion.div>
-        <motion.div
           className="about-details-container"
           initial={{ opacity: 0, y: 20 }}  
           whileInView={{ opacity: 1, y: 0 }}
