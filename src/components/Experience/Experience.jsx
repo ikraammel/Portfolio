@@ -29,7 +29,7 @@ const Experience = () => {
         </div>
 
         {/* Animation de la flèche */}
-        <ArrowMotion location="#projects"/>
+        <ArrowMotion location="#projects" />
       </div>
     </section>
   );
