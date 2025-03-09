@@ -30,10 +30,26 @@
   }
   
   #socials-container {
-    
-    justify-content: center;
+    display: flex; /* Assure que les icônes sont côte à côte */
+    justify-content: center; /* Centrer les icônes */
     margin-top: 1rem;
-    gap: 2rem; /* Espacement entre les icônes */
+    gap: 1.5rem; /* Espacement entre les icônes */
+    align-items: center; /* Aligner verticalement les icônes si nécessaire */
+  }
+  
+  .social-icon {
+    display: inline-block; /* Assure que les icônes sont alignées horizontalement */
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon:hover {
+    transform: scale(1.1);
   }
   
   .btn-color-1, .btn-color-2 {
@@ -70,17 +86,3 @@
     cursor: pointer;
   }
   
-  .social-icon {
-    display: inline-block; /* Assure que les icônes sont alignées horizontalement */
-  }
-  
-  .icon {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .icon:hover {
-    transform: scale(1.1);
-  }
