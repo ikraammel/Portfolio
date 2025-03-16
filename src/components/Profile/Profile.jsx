@@ -20,7 +20,7 @@ const Profile = () => {
         <Motion text1="Hello, I'm" text2="Ikram El Houl" />
         <p className="section__text__p2">Computer Science & AI student</p>
         <div className="btn-container">
-          <button className="btn btn-color-2" onClick={() => window.open('CV_ELHOUL_IKRAM.pdf')}>Download CV</button>
+          <button className="btn btn-color-2" onClick={() => window.open('CV_ELHOUL_IKRAM fr_version.pdf')}>Download CV</button>
           <button className="btn btn-color-1" onClick={() => (window.location.href='#contact')}>Contact Info</button>
         </div>
         {/* Conteneur pour les icônes LinkedIn et GitHub */}
