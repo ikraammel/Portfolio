@@ -26,6 +26,18 @@ const Experience = () => {
             titre="Web development"
             skills={["HTML", "CSS", "Javascript", "React"]}
           />
+          <CustomExperience
+            titre="Frameworks"
+            skills={["Spring Boot"]}
+          />
+          <CustomExperience
+            titre="Librairies"
+            skills={["React","Hibernate"]}
+          />
+          <CustomExperience
+            titre="Databases"
+            skills={["Postgresql","MySQL"]}
+          />
         </div>
 
         {/* Animation de la flèche */}
