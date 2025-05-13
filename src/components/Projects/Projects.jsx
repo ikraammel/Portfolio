@@ -15,6 +15,7 @@ const Projects = () => {
             img="tajine.jpg"
             title="Dar Tajine"
             link="https://github.com/ikraammel/streamlit-chat"
+            site="https://dartajine.netlify.app/"
           />
           <MyProjects
             img="perf.PNG"
