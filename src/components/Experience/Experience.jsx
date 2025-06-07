@@ -38,6 +38,10 @@ const Experience = () => {
             titre="Databases"
             skills={["Postgresql","MySQL"]}
           />
+          <CustomExperience
+            titre="Tools"
+            skills={["Git","Github","VsCode","IntelliJ IDEA","Postman","DBeaver"]}
+          />
         </div>
 
         {/* Animation de la flèche */}
