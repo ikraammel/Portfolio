@@ -14,7 +14,7 @@ const Projects = () => {
           <MyProjects
             img="tajine.jpg"
             title="Dar Tajine"
-            link="https://github.com/ikraammel/streamlit-chat"
+            link="https://github.com/ikraammel/dar-tajine"
             site="https://dartajine.netlify.app/"
           />
           <MyProjects
@@ -22,6 +22,12 @@ const Projects = () => {
             title="If Perfumes"
             link="https://github.com/ikraammel/if-perfumes"
             site="https://if-perfumes.vercel.app/"
+          />
+          <MyProjects
+            img="Byte.PNG"
+            title="Byte Brigade"
+            link="https://github.com/ikraammel/Byte-Brigade-s-site"
+            site="https://bytebrigade.netlify.app/"
           />
         </div>
       </div>
