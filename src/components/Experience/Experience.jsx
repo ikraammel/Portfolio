@@ -15,7 +15,7 @@ const Experience = () => {
       />
 
       <div className="experience-details-container">
-        <div className="about-container">
+        <div className="experience-section-container">
           {/* Animation des détails de programmation */}
           <CustomExperience
             titre="Programming Languages"

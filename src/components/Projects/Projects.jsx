@@ -10,7 +10,6 @@ const Projects = () => {
       {/* Animation du titre */}
       <Motion text1="Browse my recent" text2="Projects" />
       <div className="projects-details-container">
-        <div className="about-container">
           <MyProjects
             img="tajine.jpg"
             title="Dar Tajine"
@@ -29,7 +28,6 @@ const Projects = () => {
             link="https://github.com/ikraammel/Byte-Brigade-s-site"
             site="https://bytebrigade.netlify.app/"
           />
-        </div>
       </div>
 
       {/* Animation de la flèche */}

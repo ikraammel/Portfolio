@@ -1,44 +1,51 @@
 #about{
     position: relative;
 }
-.about-container{
+
+.about-section-container{
     display: flex;
     gap: 2rem;
-    margin-bottom:2rem ;
-    margin-top: 2rem;
-    
+    margin: 2rem 0;
+    flex-wrap: wrap; /* pour que les cartes passent à la ligne si écran petit */
 }
+
 #about-details-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 section{
     padding-top: 4vh;
-    height:96vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
+
 .section-container{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
 .details-container{
     padding: 1rem;
     flex:1;
     background: white;
     border-radius: 2rem;
-    border:rgb(53,53,53)0.1rem solid;
-    border-color: rgb(163,163,163);
+    border: 0.1rem solid rgb(163,163,163);
     text-align: center;
     width: 300px;
+    transition: all 0.3s ease;
 }
+
 .details-container:hover{
     cursor: pointer;
-    width: 350px;
+    transform: scale(1.05);
     background-color: gray;
 }
+
 .about-container-motion {
     display: flex;
     flex-direction: column;
@@ -48,4 +55,25 @@ section{
     margin: 0 auto;
     padding: 3.5rem;
     overflow: hidden;
-  }
+}
+
+/* Media queries pour mobile */
+@media (max-width: 768px) {
+    section {
+        margin: 0 1rem;
+        padding-top: 2vh;
+    }
+    
+    .about-section-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .details-container {
+        width: 90%;
+    }
+    
+    .details-container:hover {
+        transform: scale(1.03);
+    }
+}

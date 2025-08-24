@@ -13,7 +13,7 @@ export default function CustomExperience({ titre, skills }) {
       <h2 className="experience-sub-title">{titre}</h2>
       <div className="article-container">
         {skills.map((item, index) => (
-          <CustomSkill skillName={item} key={index} />
+          <CustomSkill skillName={item} key={index} index={index}/>
         ))}
       </div>
     </motion.div>

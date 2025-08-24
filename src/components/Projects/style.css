@@ -1,24 +1,20 @@
-/* Section des projets */
 #projects {
     padding: 3rem 1rem;
     text-align: center;
 }
 
-.projects-wrapper {
+.projects-details-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Permet aux éléments de se réorganiser */
+    justify-content: center; /* Centre les projets */
     gap: 2rem;
-    width: 100%;
-    flex-wrap: wrap; /* Permet aux éléments de se réorganiser sur mobile */
-    padding: 2rem 0;
 }
 
-/* Conteneur des projets */
 .projects-container {
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border: 0.1rem solid rgb(163, 163, 163);
     padding: 1rem;
-    width: 45%; /* Réduit la largeur pour les afficher côte à côte */
+    width: 300px; /* fixe une largeur uniforme */
     box-sizing: border-box;
     text-align: center;
     display: flex;
@@ -28,74 +24,32 @@
     transition: all 0.3s ease;
 }
 
-/* Image des projets */
+.projects-container:hover {
+    transform: scale(1.05);
+}
+
 .project-img {
     width: 100%;
-    height: 150px; /* Réduit la taille des images */
+    height: 150px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 1rem;
     transition: all 0.3s ease;
 }
 
 .project-img:hover {
-    height: 170px; /* Légère augmentation de la taille au survol */
+    height: 170px;
 }
 
-/* Container pour afficher les icônes des projets */
-.projects-container h3 {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-}
-
-/* Container des boutons */
 .btn-container {
-    margin-top: auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
-.details-container {
-    padding: 1rem;
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    text-align: center;
-    width: 300px;
+/* Media queries pour mobile */
+@media (max-width: 768px) {
+    .projects-container {
+        width: 90%; /* prend presque toute la largeur */
+    }
 }
-
-.details-container:hover {
-    cursor: pointer;
-    width: 350px;
-    background-color: gray;
-}
-
-/* Styles des boutons */
-.btn-color-1, .btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
-}
-
-.btn-color-1 {
-    background-color: rgb(53, 53, 53);
-    color: white;
-}
-
-.btn-color-1:hover {
-    background: black;
-    color: white;
-}
-
-.btn-color-2:hover {
-    background: rgb(53, 53, 53);
-    color: white;
-}
-
-.btn {
-    font-weight: 600;
-    transition: all 300 ease;
-    padding: 1rem;
-    width: 8rem;
-    border-radius: 2rem;
-    cursor: pointer;
-}
-
-

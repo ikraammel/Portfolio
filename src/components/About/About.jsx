@@ -17,7 +17,7 @@ const About = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="about-container">
+          <div className="about-section-container">
             <AboutChild
               title="Experience"
               alt="experience icon"
@@ -25,7 +25,7 @@ const About = () => {
               p={
                 <div>
                   <b>Full Stack Developer Intern</b> – OCP <br />
-                  Jul – Sep 2025 <br />
+                  Aug 2025 <br />
                   Development of a secure e-commerce platform managing products, categories, associations, orders, and cart. <br />
                   Technologies: Spring Boot, React, PostgreSQL, JWT
                 </div>
