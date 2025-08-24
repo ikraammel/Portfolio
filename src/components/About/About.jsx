@@ -3,6 +3,7 @@ import React from "react";
 import AboutChild from "./AboutChild";
 import "./style.css";
 import Motion from "../Motion";
+import { div } from "framer-motion/m";
 
 const About = () => {
   return (
@@ -21,7 +22,16 @@ const About = () => {
               title="Experience"
               alt="experience icon"
               src="experience.png"
+              p={
+                <div>
+                  <b>Full Stack Developer Intern</b> – OCP <br />
+                  Jul – Sep 2025 <br />
+                  Development of a secure e-commerce platform managing products, categories, associations, orders, and cart. <br />
+                  Technologies: Spring Boot, React, PostgreSQL, JWT
+                </div>
+              }
             />
+
             <AboutChild
               title="Education"
               alt="education icon"
