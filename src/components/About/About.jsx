@@ -27,7 +27,7 @@ const About = () => {
                   <b>Full Stack Developer Intern</b> – OCP <br />
                   Aug 2025 <br />
                   Development of a secure e-commerce platform managing products, categories, associations, orders, and cart. <br />
-                  Technologies: Spring Boot, React, PostgreSQL, JWT
+                  Technologies: Java, Spring Boot, React, PostgreSQL, JWT
                 </div>
               }
             />
