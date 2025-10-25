@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import React from "react";
 import CustomExperience from "./CustomExperience";
 import "./style.css";
@@ -6,42 +5,26 @@ import Motion from "../Motion";
 import ArrowMotion from "../ArrowMotion";
 
 const Experience = () => {
+  const experiences = [
+    { titre: "Programming Languages", skills: ["Python", "Java", "TypeScript"] },
+    { titre: "Web Development", skills: ["HTML", "CSS", "Javascript", "React"] },
+    { titre: "Frameworks", skills: ["Spring Boot"] },
+    { titre: "Libraries", skills: ["React", "Hibernate"] },
+    { titre: "Databases", skills: ["PostgreSQL", "MySQL"] },
+    { titre: "Tools", skills: ["Git", "Github", "VsCode", "IntelliJ IDEA", "Postman", "DBeaver"] },
+  ];
+
   return (
     <section id="experience">
       {/* Animation du texte "Explore my" */}
-      <Motion
-      text1="Explore My"
-      text2="Experience"
-      />
+      <Motion text1="Explore My" text2="Experience" />
 
       <div className="experience-details-container">
         <div className="experience-section-container">
-          {/* Animation des détails de programmation */}
-          <CustomExperience
-            titre="Programming Languages"
-            skills={["Python", "C language", "Javascript", "Java"]}
-          />
-          {/* Animation des détails du développement web */}
-          <CustomExperience
-            titre="Web development"
-            skills={["HTML", "CSS", "Javascript", "React"]}
-          />
-          <CustomExperience
-            titre="Frameworks"
-            skills={["Spring Boot"]}
-          />
-          <CustomExperience
-            titre="Librairies"
-            skills={["React","Hibernate"]}
-          />
-          <CustomExperience
-            titre="Databases"
-            skills={["Postgresql","MySQL"]}
-          />
-          <CustomExperience
-            titre="Tools"
-            skills={["Git","Github","VsCode","IntelliJ IDEA","Postman","DBeaver"]}
-          />
+          {/* Génération dynamique des sections */}
+          {experiences.map((exp, index) => (
+            <CustomExperience key={index} titre={exp.titre} skills={exp.skills} />
+          ))}
         </div>
 
         {/* Animation de la flèche */}
