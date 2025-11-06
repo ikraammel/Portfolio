@@ -8,7 +8,7 @@ const Experience = () => {
   const experiences = [
     { titre: "Programming Languages", skills: ["Python", "Java", "TypeScript"] },
     { titre: "Web Development", skills: ["HTML", "CSS", "Javascript", "React"] },
-    { titre: "Frameworks", skills: ["Spring Boot"] },
+    { titre: "Frameworks", skills: ["Spring Boot","Next.js"] },
     { titre: "Libraries", skills: ["React", "Hibernate"] },
     { titre: "Databases", skills: ["PostgreSQL", "MySQL"] },
     { titre: "Tools", skills: ["Git", "Github", "VsCode", "IntelliJ IDEA", "Postman", "DBeaver"] },
