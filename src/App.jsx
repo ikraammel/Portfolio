@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import HamburgerNav from "./components/HamburgerNav/HamburgerNav";
 import Profile from "./components/Profile/Profile";
 import Projects from "./components/Projects/Projects";
+import Certificates from "./components/Certificates/Certificates";
 import "./mediaqueries.css";
 import "./style.css";
 
@@ -19,6 +20,7 @@ function App() {
         <Profile />
         <About />
         <Experience />
+        <Certificates />
         <Projects />
         <Contact />
         <Footer />

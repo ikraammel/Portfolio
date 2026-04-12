@@ -3,7 +3,7 @@ import React from "react";
 import AboutChild from "./AboutChild";
 import "./style.css";
 import Motion from "../Motion";
-import { div } from "framer-motion/m";
+import ArrowMotion from "../ArrowMotion";
 
 const About = () => {
   return (
@@ -12,53 +12,69 @@ const About = () => {
       <div className="section-container">
         <motion.div
           className="about-details-container"
-          initial={{ opacity: 0, y: 20 }}  
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.2
+              }
+            }
+          }}
         >
           <div className="about-section-container">
-            <AboutChild
-              title="Experience"
-              alt="experience icon"
-              src="experience.png"
-              p={
-                <div>
-                  <b>Full Stack Developer Intern</b> – OCP <br />
-                  Aug 2025 <br />
-                  Development of a secure e-commerce platform managing products, categories, associations, orders, and cart. <br />
-                  Technologies: Java, Spring Boot, React, PostgreSQL, JWT
-                </div>
-              }
-            />
+            <motion.div className="about-card-wrapper" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>
+              <AboutChild
+                title="Experience"
+                alt="experience icon"
+                src="experience.png"
+                p={
+                  <div>
+                    <b>Full Stack Developer Intern</b> – OCP <br />
+                    August 2025 <br />
+                    Development of a secure e-commerce platform managing products, categories, associations, orders, and cart.
+                    Technologies: Java, Spring Boot, React, PostgreSQL, JWT
+                  </div>
+                }
+              />
+            </motion.div>
 
-            <AboutChild
-              title="Education"
-              alt="education icon"
-              src="education.png"
-              p={
-                <div>
-                  - Computer Engineering & AI Student
-                  <br />
-                  - Preparatory Classes <br />
-                  - Baccalaureate in Mathematical Sciences A
-                </div>
-              }
-            />
-            <AboutChild
-              title="Languages"
-              src="langues.png"
-              alt="langue icon"
-              p={
-                <div>
-                  <b>Arabic: </b> Native <br />
-                  <b>French: </b> DELF B2 <br />
-                  <b>English: </b> Intermediate
-                </div>
-              }
-            />
+            <motion.div className="about-card-wrapper" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>
+              <AboutChild
+                title="Education"
+                alt="experience icon"
+                src="education.png"
+                p={
+                  <div>
+                    <b>ENSA Safi</b> <br />
+                    2024 - Present: Computer Engineering & AI <br />
+                    2022 - 2024: Preparatory Classes <br />
+                    2021 - 2022: Baccalaureate Sciences Mathématiques A
+                  </div>
+                }
+              />
+            </motion.div>
+
+            <motion.div className="about-card-wrapper" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>
+              <AboutChild
+                title="Languages"
+                src="langues.png"
+                alt="langue icon"
+                p={
+                  <div>
+                    <b>Arabic: </b> Native <br />
+                    <b>French: </b> DELF B2 <br />
+                    <b>English: </b> Intermediate
+                  </div>
+                }
+              />
+            </motion.div>
           </div>
         </motion.div>
+        <ArrowMotion location="#experience" />
       </div>
     </section>
   );

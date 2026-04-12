@@ -4,9 +4,19 @@
 
 .about-section-container{
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     margin: 2rem 0;
-    flex-wrap: wrap; /* pour que les cartes passent à la ligne si écran petit */
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+    align-items: stretch; /* Harmonise les hauteurs des wrappers */
+}
+
+.about-card-wrapper {
+    flex: 1;
+    display: flex;
+    max-width: 400px;
+    min-width: 250px;
 }
 
 #about-details-container{
@@ -16,12 +26,7 @@
     flex-direction: column;
 }
 
-section{
-    padding-top: 4vh;
-    margin: 0 10rem;
-    box-sizing: border-box;
-    min-height: fit-content;
-}
+
 
 .section-container{
     display: flex;
@@ -30,14 +35,19 @@ section{
 }
 
 .details-container{
-    padding: 1rem;
-    flex:1;
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 200px;
+    max-width: 400px;
     background: white;
     border-radius: 2rem;
     border: 0.1rem solid rgb(163,163,163);
     text-align: center;
-    width: 300px;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
 }
 
 .details-container:hover{
@@ -45,6 +55,7 @@ section{
     transform: scale(1.05);
     background-color: gray;
 }
+
 
 .about-container-motion {
     display: flex;
@@ -55,6 +66,7 @@ section{
     margin: 0 auto;
     padding: 3.5rem;
     overflow: hidden;
+    font-size: 0.9rem;
 }
 
 /* Media queries pour mobile */

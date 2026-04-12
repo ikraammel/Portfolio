@@ -5,19 +5,23 @@
 .experience-section-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 2.5rem;
-    justify-content: space-around;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch; /* Force la même hauteur pour tous les blocs */
 }
 
 .details-container{
-    padding: 1rem;
+    padding: 1.5rem;
     flex: 1;
     background: white;
     border-radius: 2rem;
     border: 0.1rem solid rgb(163,163,163);
     text-align: center;
-    width: 300px;
+    width: 320px;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: auto;
 }
 
 .details-container:hover{
@@ -26,11 +30,6 @@
     background-color: gray;
 }
 
-.arrow{
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
-}
 
 /* Media queries pour mobile */
 @media (max-width: 768px) {

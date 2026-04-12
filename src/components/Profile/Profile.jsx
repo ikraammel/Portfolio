@@ -18,7 +18,7 @@ const Profile = () => {
       </motion.div>
       <div className="section__text">
         <Motion text1="Hello, I'm" text2="Ikram El Houl" />
-        <p className="section__text__p2">Computer Science & AI student</p>
+        <p className="section__text__p2">Computer Engineering & AI Student @ ENSA Safi</p>
         <div className="btn-container">
           <button className="btn btn-color-2" onClick={() => window.open('CV_ELHOUL_IKRAM.pdf')}>Download CV</button>
           <button className="btn btn-color-1" onClick={() => (window.location.href='#contact')}>Contact Info</button>

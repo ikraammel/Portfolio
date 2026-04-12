@@ -12,7 +12,12 @@ const ArrowMotion = ({ location }) => {
       viewport={{ once: true }}
       transition={{ duration: 0.8, delay: 0.7 }}
       whileHover={{ scale: 1.2 }}
-      onClick={() => (window.location.href = location)} 
+      onClick={() => {
+        const element = document.querySelector(location);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }} 
       style={{ cursor: 'pointer' }} 
     />
   );

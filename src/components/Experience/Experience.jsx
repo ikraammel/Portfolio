@@ -6,12 +6,12 @@ import ArrowMotion from "../ArrowMotion";
 
 const Experience = () => {
   const experiences = [
-    { titre: "Programming Languages", skills: ["Python", "Java", "TypeScript"] },
-    { titre: "Web Development", skills: ["HTML", "CSS", "Javascript", "React"] },
-    { titre: "Frameworks", skills: ["Spring Boot","Next.js"] },
-    { titre: "Libraries", skills: ["React", "Hibernate"] },
+    { titre: "Programming Languages", skills: ["Javascript", "TypeScript", "Java", "Python", "Flutter"] },
+    { titre: "Web Development", skills: ["HTML", "CSS", "Next.js", "React"] },
+    { titre: "Frameworks & Libs", skills: ["Spring Boot", "Hibernate", "Spring Security", "JWT", "Microservices"] },
     { titre: "Databases", skills: ["PostgreSQL", "MySQL"] },
-    { titre: "Tools", skills: ["Git", "Github", "VsCode", "IntelliJ IDEA", "Postman", "DBeaver"] },
+    { titre: "Tools & DevOps", skills: ["Git", "Github", "Docker", "Jenkins", "Postman"] },
+    { titre: "Languages", skills: ["Arabic (Native)", "French (B2)", "English (Intermediate)"] },
   ];
 
   return (
@@ -28,7 +28,7 @@ const Experience = () => {
         </div>
 
         {/* Animation de la flèche */}
-        <ArrowMotion location="#projects" />
+        <ArrowMotion location="#certificates" />
       </div>
     </section>
   );
