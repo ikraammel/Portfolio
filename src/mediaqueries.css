@@ -88,23 +88,26 @@
       font-size: 1rem; /* Réduire la taille de la police */
     }
     .logo {
-      font-size: 1.25rem; /* Réduire la taille de la police */
+      font-size: 1.25rem;
     }
     .nav-links {
       flex-direction: column;
-      gap: 0.25rem; /* Réduire l'espace entre les éléments */
+      gap: 0.25rem;
       text-align: center;
     }
     .section_pic-container {
       width: auto;
-      height: 40vw; /* Réduire la hauteur */
+      height: 40vw;
       justify-content: center;
     }
+    .section__text__p1 {
+      font-size: 1.1rem;
+    }
     .section__text__p2 {
-      font-size: 1rem; /* Réduire la taille de la police */
+      font-size: 0.95rem;
     }
     .title {
-      font-size: 1.75rem; /* Réduire la taille de la police */
+      font-size: 2rem;
     }
     .text-container {
       text-align: justify;
@@ -112,6 +115,10 @@
     .section-container {
       height: auto;
       min-height: fit-content;
-      padding: 0.5rem; /* Réduire le padding */
+      padding: 0.5rem;
+    }
+    section {
+      padding: 2rem 5%;
+      margin: 0;
     }
   }

@@ -78,6 +78,7 @@
     
     .details-container {
         flex: 1 1 100%;
+        width: 100%;
         max-width: 100%;
         min-width: unset;
         padding: 1.2rem;
