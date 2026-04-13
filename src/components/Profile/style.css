@@ -84,4 +84,26 @@
     width: 8rem;
     border-radius: 2rem;
     cursor: pointer;
-  }
+/* Media Queries for Mobile */
+@media screen and (max-width: 1200px) {
+    #profile {
+        height: auto;
+        padding-top: 5rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section_pic-container {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .section__text__p1 {
+        font-size: 1.25rem;
+    }
+}

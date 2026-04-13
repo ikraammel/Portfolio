@@ -6,17 +6,17 @@
     display: flex;
     gap: 1.5rem;
     margin: 2rem 0;
-    flex-wrap: nowrap;
+    flex-wrap: wrap; /* Permet de passer à la ligne proprement sur tablette */
     width: 100%;
     justify-content: center;
-    align-items: stretch; /* Harmonise les hauteurs des wrappers */
+    align-items: stretch;
 }
 
 .about-card-wrapper {
     flex: 1;
     display: flex;
     max-width: 400px;
-    min-width: 250px;
+    min-width: 280px; /* Un peu plus large pour la lisibilité */
 }
 
 #about-details-container{

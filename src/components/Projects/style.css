@@ -20,7 +20,9 @@
     border-radius: 2rem;
     border: 0.1rem solid rgb(163, 163, 163);
     padding: 1rem;
-    width: 300px; /* fixe une largeur uniforme */
+    min-width: 280px;
+    max-width: 450px;
+    flex: 1;
     box-sizing: border-box;
     text-align: center;
     display: flex;

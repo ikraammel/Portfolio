@@ -7,21 +7,21 @@
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-    align-items: stretch; /* Force la même hauteur pour tous les blocs */
+    align-items: stretch;
 }
 
 .details-container{
     padding: 1.5rem;
-    flex: 1;
+    flex: 1 1 calc(33.333% - 2rem);
     background: white;
     border-radius: 2rem;
     border: 0.1rem solid rgb(163,163,163);
     text-align: center;
-    width: 320px;
+    min-width: 250px;
+    max-width: 450px;
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    height: auto;
 }
 
 .details-container:hover{
@@ -30,8 +30,45 @@
     background-color: gray;
 }
 
+.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
 
-/* Media queries pour mobile */
+.article-container article {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 0 1 auto;
+}
+
+.article-container article .icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.article-container article h3 {
+    margin: 0;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.experience-sub-title {
+    margin: 0 0 1.5rem 0;
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+}
+
+@media (max-width: 1024px) {
+    .details-container {
+        flex: 1 1 calc(50% - 2rem);
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 768px) {
     .experience-section-container {
         flex-direction: column;
@@ -40,16 +77,55 @@
     }
     
     .details-container {
-        width: 90%;
+        flex: 1 1 100%;
+        max-width: 100%;
+        min-width: unset;
+        padding: 1.2rem;
+    }
+
+    .article-container {
+        gap: 0.8rem;
+    }
+
+    .article-container article h3 {
+        font-size: 0.95rem;
+    }
+
+    .experience-sub-title {
+        margin-bottom: 1.2rem;
+        font-size: 1.1rem;
     }
 }
-.article-container article {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem; /* espace entre icône et texte */
-}
 
-.article-container article .icon {
-  width: 20px; /* ajuste selon la taille de ton icône */
-  height: 20px;
+@media (max-width: 480px) {
+    .experience-section-container {
+        gap: 1rem;
+    }
+
+    .details-container {
+        padding: 1rem;
+        border-radius: 1.2rem;
+    }
+
+    .article-container {
+        gap: 0.6rem;
+    }
+
+    .article-container article {
+        gap: 0.3rem;
+    }
+
+    .article-container article .icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .article-container article h3 {
+        font-size: 0.85rem;
+    }
+
+    .experience-sub-title {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
 }
