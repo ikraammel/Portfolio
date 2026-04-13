@@ -10,23 +10,14 @@ const About = () => {
     <section id="about">
       <Motion className="section__text__p1" text1="Get to know more" text2="About me" />
       <div className="section-container">
-        <motion.div
-          className="about-details-container"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={{
-            hidden: { opacity: 0 },
-            visible: {
-              opacity: 1,
-              transition: {
-                staggerChildren: 0.2
-              }
-            }
-          }}
-        >
+        <div className="about-details-container">
           <div className="about-section-container">
-            <motion.div className="about-card-wrapper" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>
+            <motion.div 
+              className="about-card-wrapper" 
+              initial={{ opacity: 0, y: 50, scale: 0.8 }} 
+              whileInView={{ opacity: 1, y: 0, scale: 1, transition: { type: "spring", bounce: 0.4, duration: 0.8 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
               <AboutChild
                 title="Experience"
                 alt="experience icon"
@@ -42,7 +33,12 @@ const About = () => {
               />
             </motion.div>
 
-            <motion.div className="about-card-wrapper" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>
+            <motion.div 
+              className="about-card-wrapper" 
+              initial={{ opacity: 0, y: 50, scale: 0.8 }} 
+              whileInView={{ opacity: 1, y: 0, scale: 1, transition: { type: "spring", bounce: 0.4, duration: 0.8 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
               <AboutChild
                 title="Education"
                 alt="experience icon"
@@ -58,7 +54,12 @@ const About = () => {
               />
             </motion.div>
 
-            <motion.div className="about-card-wrapper" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>
+            <motion.div 
+              className="about-card-wrapper" 
+              initial={{ opacity: 0, y: 50, scale: 0.8 }} 
+              whileInView={{ opacity: 1, y: 0, scale: 1, transition: { type: "spring", bounce: 0.4, duration: 0.8 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
               <AboutChild
                 title="Languages"
                 src="langues.png"
@@ -73,7 +74,7 @@ const About = () => {
               />
             </motion.div>
           </div>
-        </motion.div>
+        </div>
         <ArrowMotion location="#experience" />
       </div>
     </section>
