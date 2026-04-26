@@ -39,7 +39,7 @@ const Footer = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 1 }}
       >
-        Copyright &copy; 2025 Ikram El Houl. All rights Reserved.
+        Copyright &copy; 2026 Ikram El Houl. All rights Reserved.
       </motion.p>
     </footer>
   );

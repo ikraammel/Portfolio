@@ -10,6 +10,13 @@ const Projects = () => {
       {/* Animation du titre */}
       <Motion text1="Browse my recent" text2="Projects" />
       <div className="projects-details-container">
+        <MyProjects
+            img="glow_sense.PNG"
+            title="GlowSense"
+            link="https://github.com/ikraammel/GlowSense"
+            site="#"
+            objectFit="contain"
+          />
           <MyProjects
             img="logobus.png"
             title="eBus - Mobile App"

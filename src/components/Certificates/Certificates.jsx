@@ -12,7 +12,8 @@ const Certificates = () => {
         { name: "SQL (Basic, Intermediate)", issuer: "HackerRank" },
         { name: "JavaScript (Basic, Intermediate)", issuer: "HackerRank" },
         { name: "Java (Basic)", issuer: "HackerRank" },
-        { name: "Git & Github", issuer: "Udemy" }
+        { name: "Git & Github", issuer: "Udemy" },
+        { name: "Docker", issuer: "DataScientist.fr" }
     ];
 
     return (

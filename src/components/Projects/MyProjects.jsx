@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const MyProjects = ({ img, title, link, site }) => {
+const MyProjects = ({ img, title, link, site, objectFit = "cover" }) => {
   return (
     <motion.div
       className="projects-container color-container"
@@ -17,6 +17,7 @@ const MyProjects = ({ img, title, link, site }) => {
             src={img}
             alt={title}
             className="project-img"
+            style={{ objectFit: objectFit }}
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
             onError={(e) => {
