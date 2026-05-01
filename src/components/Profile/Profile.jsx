@@ -14,7 +14,7 @@ const Profile = () => {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-        <img src="ikramm.png" alt="Ikram" />
+        <img src="ikram.png" alt="Ikram" />
       </motion.div>
       <div className="section__text">
         <Motion text1="Hello, I'm" text2="Ikram El Houl" />
