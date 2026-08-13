@@ -6,14 +6,17 @@ import "./style.css";
 
 const Certificates = () => {
     const certs = [
-        { name: "Oracle OCI / Data Platform / AI", issuer: "Oracle" },
-        { name: "Next.js", issuer: "Scrimba" },
+        { name: "Angular Fundamentals", issuer: "Master.dev" },
+        { name: "Oracle OCI AI", issuer: "Oracle" },
+        { name: "Oracle Data Platform", issuer: "Oracle" },
+        { name: "Oracle OCI", issuer: "Oracle" },
+        { name: "Bases de Docker", issuer: "DataScientist.fr" },
+        { name: "Next.JS", issuer: "Scrimba" },
         { name: "ReactJs", issuer: "Udemy" },
-        { name: "SQL (Basic, Intermediate)", issuer: "HackerRank" },
-        { name: "JavaScript (Basic, Intermediate)", issuer: "HackerRank" },
-        { name: "Java (Basic)", issuer: "HackerRank" },
         { name: "Git & Github", issuer: "Udemy" },
-        { name: "Docker", issuer: "DataScientist.fr" }
+        { name: "Java (Basic)", issuer: "HackerRank" },
+        { name: "JavaScript (Basic, intermédiaire)", issuer: "HackerRank" },
+        { name: "SQL (Basic, intermédiaire)", issuer: "HackerRank" }
     ];
 
     return (
