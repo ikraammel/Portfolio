@@ -37,7 +37,7 @@ const Experience = () => {
 
     {
       titre: "Tools & DevOps",
-      skills: ["Git", "GitHub", "Docker", "Jenkins", "Postman"]
+      skills: ["Git", "GitHub", "Docker", "Postman"]
     },
 
     {
