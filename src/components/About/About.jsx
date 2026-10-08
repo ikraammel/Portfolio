@@ -59,6 +59,14 @@ const About = () => {
                           <span>PostgreSQL</span>
                           <span>Power BI</span>
                         </div>
+                        <a
+                          className="exp-github-link"
+                          href="https://github.com/ikraammel/logitrack"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          View Logitrack on GitHub
+                        </a>
                       </div>
                     </div>
 
@@ -92,6 +100,14 @@ const About = () => {
                           <span>PostgreSQL</span>
                           <span>JWT</span>
                         </div>
+                        <a
+                          className="exp-github-link"
+                          href="https://github.com/ikraammel/OCP-project"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          View OCP project on GitHub
+                        </a>
                       </div>
                     </div>
 

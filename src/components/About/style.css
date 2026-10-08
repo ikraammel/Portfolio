@@ -56,10 +56,10 @@
     height: 100%;
 }
 
-.details-container:hover{
-    cursor: pointer;
+#about .details-container:hover{
     transform: scale(1.05);
-    background-color: gray;
+    background-color: #f8fafc;
+    cursor: default;
 }
 
 
@@ -227,4 +227,24 @@
     height: 1.5rem;
     background: linear-gradient(to bottom, rgba(99,102,241,0.3), rgba(148,163,184,0.3));
     margin: 0 0 0 5px;
+}
+
+#about .exp-github-link {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+    color: #4338ca;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+#about .exp-github-link:hover {
+    color: #312e81;
+}
+
+#about .exp-github-link:focus-visible {
+    outline: 2px solid #4338ca;
+    outline-offset: 4px;
+    border-radius: 2px;
 }
