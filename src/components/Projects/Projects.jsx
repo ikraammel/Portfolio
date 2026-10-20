@@ -30,10 +30,10 @@ const Projects = () => {
             site="#"
           />
           <MyProjects
-            img="hotel.png"
+            img="hotel.PNG"
             title="Hotel Booking"
             link="https://github.com/ikraammel/Hotel-Booking-Application"
-            site="#"
+            site="https://ikramshotel.netlify.app/"
           />
           <MyProjects
             img="tajine.jpg"

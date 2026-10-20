@@ -55,6 +55,10 @@
     gap: 1rem;
 }
 
+.project-btn {
+    text-decoration: none;
+}
+
 @media (max-width: 1024px) {
     .projects-container {
         flex: 1 1 calc(50% - 2rem);

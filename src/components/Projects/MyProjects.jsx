@@ -48,25 +48,29 @@ const MyProjects = ({ img, title, link, site, objectFit = "cover" }) => {
       </div>
       <h2 className="experience-sub-title project-title">{title}</h2>
       <div className="btn-container">
-        <motion.button
+        <motion.a
           className="btn btn-color-2 project-btn"
-          onClick={() => window.open(link, '_blank')}
+          href={link}
+          target="_blank"
+          rel="noreferrer"
           whileHover={{ scale: 1.1, backgroundColor: "#475569" }}
           transition={{ duration: 0.3 }}
         >
           Github
-        </motion.button>
+        </motion.a>
 
         {/* Bouton vers le site - masqué si '#' ou absent */}
         {site && site !== "#" && (
-          <motion.button
+          <motion.a
             className="btn btn-color-2 project-btn"  
-            onClick={() => window.open(site, '_blank')}
+            href={site}
+            target="_blank"
+            rel="noreferrer"
             whileHover={{ scale: 1.1, backgroundColor: "#475569" }} 
             transition={{ duration: 0.3 }}
           >
             Visit Site
-          </motion.button>
+          </motion.a>
         )}
       </div>
     </motion.div>
