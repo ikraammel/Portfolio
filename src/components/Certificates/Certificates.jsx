@@ -6,6 +6,7 @@ import "./style.css";
 
 const Certificates = () => {
     const certs = [
+        { name: "Oracle Certified Professional: Java SE 21 Developer", issuer: "Oracle", status: "Préparation en cours" },
         { name: "Angular Fundamentals", issuer: "Master.dev" },
         { name: "Oracle OCI AI", issuer: "Oracle" },
         { name: "Oracle Data Platform", issuer: "Oracle" },
@@ -35,6 +36,7 @@ const Certificates = () => {
                         <div className="cert-info">
                             <h3>{cert.name}</h3>
                             <p>{cert.issuer}</p>
+                            {cert.status && <span className="cert-status">{cert.status}</span>}
                         </div>
                     </motion.div>
                 ))}
