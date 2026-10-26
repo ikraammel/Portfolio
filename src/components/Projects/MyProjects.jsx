@@ -1,7 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const MyProjects = ({ img, title, link, site, objectFit = "cover" }) => {
+const MyProjects = ({
+  img,
+  title,
+  link,
+  site,
+  siteLabel = "Visit Site",
+  objectFit = "cover",
+}) => {
   return (
     <motion.div
       className="projects-container color-container"
@@ -59,7 +66,7 @@ const MyProjects = ({ img, title, link, site, objectFit = "cover" }) => {
           Github
         </motion.a>
 
-        {/* Bouton vers le site - masqué si '#' ou absent */}
+        {/* Lien de démonstration - masqué si '#' ou absent */}
         {site && site !== "#" && (
           <motion.a
             className="btn btn-color-2 project-btn"  
@@ -69,7 +76,7 @@ const MyProjects = ({ img, title, link, site, objectFit = "cover" }) => {
             whileHover={{ scale: 1.1, backgroundColor: "#475569" }} 
             transition={{ duration: 0.3 }}
           >
-            Visit Site
+            {siteLabel}
           </motion.a>
         )}
       </div>

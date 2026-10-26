@@ -14,14 +14,16 @@ const Projects = () => {
             img="glow_sense.PNG"
             title="GlowSense"
             link="https://github.com/ikraammel/GlowSense"
-            site="#"
+            site="https://glow-sense-frontend.onrender.com/"
+            siteLabel="Web Demo"
             objectFit="contain"
           />
           <MyProjects
             img="logobus.png"
             title="eBus - Mobile App"
             link="https://github.com/ikraammel/eBus_frontend"
-            site="#"
+            site="https://ebus-frontend-1an4.onrender.com/"
+            siteLabel="Web Demo"
           />
           <MyProjects
             img="mode.png"
