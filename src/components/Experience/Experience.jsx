@@ -7,54 +7,51 @@ import ArrowMotion from "../ArrowMotion";
 const Experience = () => {
 
   const experiences = [
-    {
-      titre: "Programming Languages",
-      skills: ["JavaScript", "TypeScript", "Java", "Python"]
-    },
-
-    {
-      titre: "Web Development",
-      skills: ["HTML", "CSS", "Next.js", "React"]
-    },
-
-    {
-      titre: "Frameworks & Libs",
-      skills: [
-        "Angular",
-        "Spring Boot",
-        "Hibernate",
-        "Spring Security",
-        "Flutter",
-        "JWT",
-        "Microservices"
-      ]
-    },
-
-    {
-      titre: "Databases",
-      skills: ["PostgreSQL", "MySQL"]
-    },
-
-    {
-      titre: "Tools & DevOps",
-      skills: ["Git", "GitHub", "Docker", "Postman"]
-    },
-
-    {
-      titre: "Languages",
-      skills: [
-        "Arabic (Native)",
-        "French (B2)",
-        "English (Intermediate)"
-      ]
-    },
-  ];
+  {
+    titre: "Programming Languages",
+    skills: ["Java", "Python", "JavaScript", "TypeScript"]
+  },
+  {
+    titre: "Frontend Development",
+    skills: ["HTML", "CSS", "React", "Angular", "Next.js"]
+  },
+  {
+    titre: "Backend Development",
+    skills: [
+      "Spring Boot",
+      "Spring Security",
+      "Hibernate",
+      "REST APIs",
+      "JWT"
+    ]
+  },
+  {
+    titre: "Mobile Development",
+    skills: ["Flutter"]
+  },
+  {
+    titre: "Databases",
+    skills: ["PostgreSQL", "MySQL"]
+  },
+  {
+    titre: "Tools & DevOps",
+    skills: ["Git", "GitHub", "Docker", "Postman"]
+  },
+  {
+    titre: "Languages",
+    skills: [
+      "Arabic (Native)",
+      "French (B2)",
+      "English (Intermediate)"
+    ]
+  }
+];
 
   return (
     <section id="experience">
 
-      {/* Animation du texte "Explore My Experience" */}
-      <Motion text1="Explore My" text2="Experience" />
+      {/* Animation du texte "Explore My Skills" */}
+      <Motion text1="Explore My" text2="Skills" />
 
       <div className="experience-details-container">
 
